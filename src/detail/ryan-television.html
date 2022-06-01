@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Ryan Gosling</title>
+    <meta name="author" content="Isabella Carranzani" />
+    <meta name="description" content="PEC3" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles.css" />
+
+    <!-- JS -->
+    <script src="../app.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="/img/logo/logo-principal.png" alt="Logo" />
+        <h1>Portal biográfico</h1>
+      </div>
+      <nav>
+        <div id="responsive-bars"><i class="fa-solid fa-bars"></i></div>
+        <ul>
+          <li class="responsive-hidden"><a href="../index.html">Portada</a></li>
+          <li class="responsive-hidden"><a href="../presentacion.html">Presentación</a></li>
+          <li class="responsive-hidden"><a href="../categorias.html">Categorías</a></li>
+          <li class="responsive-hidden"><a href="../enlaces.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h1>Ryan Gosling en la televisión</h1>
+        <div class="separator"></div>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            sizes="(max-width: 768px) 40vw, 307px"
+            srcset="
+              ../../img/extras/responsive/ryan-gosling-hercules-tortugascale200.jpg 200w,
+              ../../img/extras/responsive/ryan-gosling-hercules-tortugascale307.jpg 307w
+            "
+          />
+          <source
+            media="(min-width: 768px) and (max-width: 991px)"
+            sizes="(max-width: 943px) 60vw, 566px"
+            srcset="
+              ../../img/extras/responsive/ryan-gosling-hercules-tortugascale461.jpg 461w,
+              ../../img/extras/responsive/ryan-gosling-hercules-tortugascale566.jpg 566w
+            "
+          />
+
+          <img
+            sizes="(max-width: 992px) 70vw, 810px"
+            srcset="../../img/extras/responsive/ryan-gosling-hercules-tortugascale810.jpg 810w"
+            src="../../img/extras/responsive/ryan-gosling-hercules-tortugascale810.jpg"
+            alt="Escena de el Joven Hércules con una tortuga"
+          />
+        </picture>
+        <section>
+          <h2>Contenido</h2>
+          <ul>
+            <li><a href="#hercules">Joven Hércules</a></li>
+            <li><a href="#pequenosProyectos">Pequeños proyectos</a></li>
+            <li><a href="#continuidad">Continuidad</a></li>
+            <li><a href="#quizasInterese">Quizás te interese</a></li>
+          </ul>
+        </section>
+        <div class="separator"></div>
+        <section>
+          <h3 id="hercules">Joven Hércules</h3>
+          <p>
+            En 1998, se mudó a Nueva Zelanda, donde alcanzó la fama encarnando a Hércules en la
+            serie de televisión “El Joven Hércules”. Esa producción televisiva le llevó al cine de
+            Hollywood, interviniendo junto a Denzel Washington en “Titanes: Hicieron Historia”
+            (2000).
+          </p>
+        </section>
+        <section>
+          <h3 id="pequenosProyectos">Pequeños proyectos</h3>
+          <p>
+            Ryan apareció en series de televisión canadienses y películas incluyendo "Goosebumps",
+            "Are You Afraid of the Dark?", "Breaker High".
+          </p>
+        </section>
+        <section>
+          <h3 id="continuidad">Continuidad</h3>
+          <p>
+            Aunque su carrera empezó muy joven en la televisión, a lo largo de los años se ha
+            centrado plenamente en la actuación cinematografica. La última serie de televisión en la
+            que participo, fue la de Hércules y en 2005 el documental "I'm Still Here: Real Diaries
+            of Young People Who Lived During the Holocaust".
+          </p>
+        </section>
+
+        <div class="separator"></div>
+        <section>
+          <h3 id="quizasInterese">Quizás te interese...</h3>
+          <div class="recommended">
+            <div>
+              <a href="./ryan-musica.html">
+                <img
+                  srcset="
+                    ../../img/extras/RyanPiano-482w.png,
+                    ../../img/extras/RyanPiano-723w.png 1.5x,
+                    ../../img/extras/RyanPiano-964w.png 2x
+                  "
+                  src="../../img/extras/RyanPiano-964w.png"
+                  alt="Ryan Gosling tocando el piano, fondo transparente"
+                />
+              </a>
+              <div>Ryan Gosling y la música</div>
+            </div>
+            <div>
+              <a href="./ryan-noah.html">
+                <img
+                  srcset="
+                    ../../img/filmografia/diariodenoah.gif,
+                    ../../img/filmografia/diariodenoah-368.gif 1.5x,
+                    ../../img/filmografia/diariodenoah-490.gif 2x
+                  "
+                  src="../../img/filmografia/diariodenoah-490.gif"
+                  alt="Escena del diario de Noah"
+                />
+              </a>
+              <div>El diario de Noah</div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <div class="info">
+        <img src="/img/logo/logo-principal.png" alt="Logo" />
+        <nav>
+          <ul>
+            <li><a href="../index.html">Portada</a></li>
+            <li><a href="../presentacion.html">Presentación</a></li>
+            <li><a href="../categorias.html">Categorías</a></li>
+            <li><a href="../enlaces.html">Enlaces </a></li>
+          </ul>
+        </nav>
+        <p>contact@biografias.net</p>
+      </div>
+      <form action="#" method="post">
+        <label id="label-email">Siempre al día con nuestra <i lang="en">newsletter</i></label>
+        <input id="email" type="email" placeholder="Escibre tu e-mail" />
+        <label id="cbox"
+          ><input type="checkbox" value="cbox" />
+          <a href="">Acepto la política de protección de datos</a></label
+        >
+        <input id="button" type="submit" value="SUSCRÍBEME" />
+      </form>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="">Aviso legal </a></li>
+            <li><a href="">Política de privacidad </a></li>
+            <li><a href="">Políticas de cookies </a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="copyright">
+        <p>2022 © Ryan Gosling</p>
+        <p>
+          Actividad realizada por Isabella Carranzani Borot, para la asignatura Herramientas HTML y
+          CSS 2022
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Ryan Gosling</title>
+    <meta name="author" content="Isabella Carranzani">
+    <meta name="description" content="PEC3">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/index.4d663569.css">
+
+    <!-- JS -->
+    <script src="/index.816e7b21.js"></script>
+
+    <!-- DEPENDENCIAS-->
+    <script src="/index.ecb2644b.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="logo">
+        <img src="/logo-principal.a504be3e.png" alt="Logo">
+        <h1>Portal biográfico</h1>
+      </div>
+      <nav>
+        <div id="responsive-bars"><i class="fa-solid fa-bars"></i></div>
+        <ul>
+          <li class="responsive-hidden selected"><a href="/index.html">Portada</a></li>
+          <li class="responsive-hidden"><a href="/presentacion.html">Presentación</a></li>
+          <li class="responsive-hidden"><a href="/categorias.html">Categorías</a></li>
+          <li class="responsive-hidden"><a href="/enlaces.html">Enlaces </a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="img-container">
+        <h1 class="title">Ryan Gosling</h1>
+        <p>¡De Disney Channel a la gran pantalla!</p>
+      </div>
+      <section class="section-carousel">
+        <div class="discover">
+          <h2>Descubre</h2>
+          <div class="alert-new outside">
+            <div class="alert-new inside">
+              <p>NEW!</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <img class="clip-path1" src="/ryan-peque.7476ff26.png" alt="Ryan Gosling pequeño">
+              </li>
+              <li class="glide__slide">
+                <img class="clip-path2" src="/ryan-and-eva.6a1f3c4f.png" alt="Ryan y Eva Mendes">
+              </li>
+              <li class="glide__slide">
+                <img class="clip-path1" src="/lalaland-cine.934d2cb6.jpeg" alt="Portada La La Land">
+              </li>
+              <li class="glide__slide">
+                <img class="clip-path2" src="/thenotebook.92bb601e.jpeg" alt="Escena el diario de Noah">
+              </li>
+              <li class="glide__slide">
+                <img class="clip-path1" src="/young-hercules.10622cfb.jpeg" alt="Escena Joven Hercules">
+              </li>
+              <li class="glide__slide">
+                <img class="clip-path2" src="/ryan-musica.24cd83ba.jpeg" alt="Ryan Gosling con bajo">
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="glide__bullets"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="info">
+        <img src="/logo-principal.a504be3e.png" alt="Logo">
+        <nav>
+          <ul>
+            <li class="selected"><a href="/index.html">Portada</a></li>
+            <li><a href="/presentacion.html">Presentación</a></li>
+            <li><a href="/categorias.html">Categorías</a></li>
+            <li><a href="/enlaces.html">Enlaces </a></li>
+          </ul>
+        </nav>
+        <p>contact@biografias.net</p>
+      </div>
+      <form action="#" method="post">
+        <label id="label-email">Siempre al día con nuestra <i lang="en">newsletter</i></label>
+        <input id="email" type="email" placeholder="Escibre tu e-mail">
+        <label id="cbox"><input type="checkbox" value="cbox">
+          <a href="">Acepto la política de protección de datos</a></label>
+        <input id="button" type="submit" value="SUSCRÍBEME">
+      </form>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="">Aviso legal </a></li>
+            <li><a href="">Política de privacidad </a></li>
+            <li><a href="">Políticas de cookies </a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="copyright">
+        <p>2022 © Ryan Gosling</p>
+        <p>
+          Actividad realizada por Isabella Carranzani Borot, para la asignatura Herramientas HTML y
+          CSS 2022
+        </p>
+      </div>
+    </footer>
+    <script>//Inicialización y configuración del carrusel
+window.addEventListener('load', ()=>{
+    new Glide('.carousel', {
+        type: 'carousel',
+        autoplay: 3000,
+        perView: 3,
+        focusAt: 'center',
+        breakpoints: {
+            1340: {
+                perView: 3
+            },
+            900: {
+                perView: 2
+            },
+            600: {
+                perView: 1
+            }
+        }
+    }).mount();
+});
+
+</script>
+  </body>
+</html>
