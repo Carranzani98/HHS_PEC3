@@ -1,6 +1,5 @@
 @import "../node_modules/@glidejs/glide/dist/css/glide.core.min.css";
 @import "../node_modules/@glidejs/glide/dist/css/glide.theme.min.css";
-@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
@@ -49,6 +48,7 @@ header nav #responsive-bars {
   display: none;
 }
 
+
 header u li {
   margin: 0;
 }
@@ -72,7 +72,7 @@ header ul li.selected a {
 
 /* HOME - MAIN */
 main .img-container {
-  background-image: url('../img/portada-Ryan.jpeg');
+  background-image: url('../img/portada-Ryan.webp');
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -673,19 +673,31 @@ form a {
 
   header nav {
     display: flex;
+    padding: 0 10px 20px;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  header nav #responsive-bars {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    color: white;
-    margin-left: 10px;
-    font-size: 26px;
-    cursor: pointer;
+  header nav #responsive-bars,
+  #responsive-bars::after,
+  #responsive-bars::before {
+    display: block;
+    background-color: #fff;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
+
+  #responsive-bars::before {
+    content: '';
+    margin-top: -8px;
+  }
+
+  #responsive-bars::after {
+    content: '';
+    margin-top: 12px;
+  }
+
 
   header nav ul {
     flex-direction: column;
